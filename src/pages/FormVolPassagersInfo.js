@@ -40,7 +40,7 @@ const [volData,setVolData] = useState([])
 
 const autoVolInfo = ()=>
 {
-    fetch('http://localhost:8000/api/volAutoQuery2/'+props.temps+'', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/volAutoQuery2/'+props.temps+'', {
                 method: 'GET',
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)

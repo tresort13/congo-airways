@@ -89,7 +89,7 @@ const message = ()=>
 
 const updateAutoBagage = ()=>
 {
-    fetch('http://localhost:8000/api/bagageAutoQuery/'+props.barcodeInfo+'/', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/bagageAutoQuery/'+props.barcodeInfo+'/', {
                 method: 'GET',
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)

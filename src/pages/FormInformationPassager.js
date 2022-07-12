@@ -32,7 +32,7 @@ function FormInformationPassager(props)
     const submitBarcode = ()=>
     {
         
-        fetch('http://localhost:8000/api/passagerInformation/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/passagerInformation/', {
                 method: 'PUT',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(barcode.infoBarcode)

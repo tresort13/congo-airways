@@ -39,7 +39,7 @@ function FormEnregistrementBagages(props)
     
 
 
-        fetch('http://localhost:8000/api/bagageInformation/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/bagageInformation/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(barcode.infoBarcode)

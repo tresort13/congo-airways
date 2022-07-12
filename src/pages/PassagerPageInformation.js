@@ -66,7 +66,7 @@ function PassagerPageInformation(props)
 
 const updateAutoPassager = ()=>
 {
-    fetch('http://localhost:8000/api/passagerAutoQuery/'+props.barcodeInfo+'/', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/passagerAutoQuery/'+props.barcodeInfo+'/', {
                 method: 'GET',
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)

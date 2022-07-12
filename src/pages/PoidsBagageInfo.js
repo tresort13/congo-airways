@@ -29,7 +29,7 @@ function PoidsBagageInfo(props)
 
 const updateAutoBagage = ()=>
 {
-    fetch('http://localhost:8000/api/volBagageAutoQuery/'+props.volInfo+'/', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/volBagageAutoQuery/'+props.volInfo+'/', {
                 method: 'GET',
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)

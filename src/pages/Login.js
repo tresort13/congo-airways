@@ -52,7 +52,7 @@ function Login(props)
 
     const connection = (e)=>
     {
-        fetch('http://127.0.0.1:8000/api/login/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/login/', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(state.credentials)
@@ -100,6 +100,12 @@ function Login(props)
 <>
  
 {isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white'}} >
+<Row className='justify-content-center mb-3 pt-3' >
+        <Col xs={"auto"}>
+        <p className='text-primary'><i><b>Veuillez vous connecter</b></i></p>
+        </Col>
+    </Row>
+    
     <Row className='justify-content-center mb-5 pt-3' >
         <Col>
         <Image src={require('./logo_new.jpg')}  className='rounded-pill ' style={{width:300}}></Image>
@@ -138,6 +144,12 @@ function Login(props)
         <p className='pt-3 text-danger'><b>{message}</b></p>
         </Col>
     </Row>
+
+    <Row className='justify-content-center pb-3'>
+        <Col  xs={6}>    
+        <p className='pt-3 text-danger'><b>{message}</b></p>
+        </Col>
+    </Row>
   
 
 
@@ -145,15 +157,22 @@ function Login(props)
 </Container> }
 
 {isMobileOrTablet && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white'}} >
+    
+<Row className='justify-content-center mb-3 pt-3' >
+        <Col xs={"auto"}>
+        <p className='text-primary'><i><b>Veuillez vous connecter</b></i></p>
+        </Col>
+</Row>
+
     <Row className='justify-content-center mb-5 pt-3' >
-        <Col>
+        <Col xs={"auto"}>
         <Image src={require('./logo_new.jpg')}  className='rounded-pill ' style={{width:300}}></Image>
         </Col>
     </Row>
       
 <Form>
     <Row className='justify-content-center'>
-        <Col xs={6} >
+        <Col xs={"auto"} >
         <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" placeholder="username"  name="username"
         value ={state.credentials.username} onChange={inputChanged}/>
@@ -163,7 +182,7 @@ function Login(props)
     </Row>
   
     <Row className='justify-content-center'>
-        <Col xs={6}>
+        <Col xs={"auto"}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
          <Form.Control type="password" placeholder="Password" name="password"
          value ={state.credentials.password} onChange={inputChanged} />
@@ -173,14 +192,19 @@ function Login(props)
     </Row>
   
     <Row className='justify-content-center pb-3'>
-        <Col  xs={6}>    
+        <Col  xs={"auto"}>    
         <Link to="" style={{color:'white',textDecorationLine:'none'}}> 
         
         <Button variant="primary" type="submit" onClick={e=>connection(e)}>
         connexion
         </Button>
         </Link>
-        <Form.Label className='pt-3 text-danger'><b>{message}</b></Form.Label>
+        </Col>
+    </Row>
+
+    <Row className='justify-content-center pb-3'>
+        <Col  xs={"auto"}>    
+        <p className='pt-3 text-danger'><b>{message}</b></p>
         </Col>
     </Row>
   

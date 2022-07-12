@@ -43,7 +43,7 @@ const isDesktop = useMediaQuery({
 
 const autoVolInfo = ()=>
 {
-    fetch('http://localhost:8000/api/volAutoQuery/', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/volAutoQuery/', {
                 method: 'GET',
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)

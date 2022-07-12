@@ -41,7 +41,7 @@ function FormScanningBaggages(props)
         
         e.preventDefault()
         
-        fetch('http://localhost:8000/api/updateBagage/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/updateBagage/', {
                 method: 'PUT',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(barcode.infoBarcode)

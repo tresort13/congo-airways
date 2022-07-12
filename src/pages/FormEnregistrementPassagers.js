@@ -39,7 +39,7 @@ function FormEnregistrementPassagers(props)
         
         e.preventDefault()
         
-        fetch('http://localhost:8000/api/passagerInformation/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/passagerInformation/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(barcode.infoBarcode)

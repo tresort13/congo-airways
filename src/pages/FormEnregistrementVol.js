@@ -36,7 +36,7 @@ function FormEnregistrementVol(props)
         
         e.preventDefault()
         
-        fetch('http://localhost:8000/api/volInformation/', {
+        fetch('https://congoairwaysapi.herokuapp.com/api/volInformation/', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(vol.infoVol)

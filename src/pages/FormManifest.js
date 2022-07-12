@@ -42,7 +42,7 @@ const submitManifest = (e)=>
    const uploadData = new FormData();
   uploadData.append('manifest', manifest);
     
-    fetch('http://127.0.0.1:8000/api/manifestUpload/', {
+    fetch('https://congoairwaysapi.herokuapp.com/api/manifestUpload/', {
             method:'POST',
             body: uploadData
           })
