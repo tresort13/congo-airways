@@ -148,7 +148,7 @@ const updateAutoBagage = ()=>
 </div>
 </Container>}
 
-{isMobileOrTablet && <Container className='justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
 
 
     <Row className='justify-content-center pb-2 pt-2' >

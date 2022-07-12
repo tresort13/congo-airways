@@ -76,7 +76,7 @@ function MenuPassagers(props)
 
 </Container>}
 
-{isMobileOrTablet && <Container className='mx-auto my-auto justify-content-center text-center bordure' style={{marginTop:30,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto mx-auto my-auto justify-content-center text-center bordure mb-5' style={{marginTop:30,backgroundColor:'white'}} >
     <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={"auto"}>
             <Link to="/home">

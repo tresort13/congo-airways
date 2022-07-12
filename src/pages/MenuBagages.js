@@ -76,7 +76,7 @@ function MenuBagages(props)
 
 </Container>}
 
-{isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure mt-2' style={{backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure mt-2 mb-5' style={{backgroundColor:'white'}} >
     <Row className='justify-content-center m-3 ' >
         <Col xs={"auto"}>
             <Link to="/home">

@@ -70,7 +70,7 @@ const autoVolInfo = ()=>
 return (
     <>
     <Header username={props.username}/>
-{isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:160,backgroundColor:'white',width:750}} >
+{isDesktop && <Container className='justify-content-center text-center bordure mb-5' style={{marginTop:100,backgroundColor:'white',width:750}} >
     <Row className='justify-content-center mb-5 pt-3' >
         <Col xs={6}>
         <Link to="/form_date_vol_passager">
@@ -108,7 +108,7 @@ return (
 </Form>
 </Container>}
 
-{isMobileOrTablet && <Container className='justify-content-center text-center bordure' style={{marginTop:160,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:160,backgroundColor:'white'}} >
     <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={"auto"}>
         <Link to="/form_date_vol_passager">

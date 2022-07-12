@@ -116,7 +116,7 @@ function Homepage()
 
        </Container>}
 
-       {isMobileOrTablet && <Container className="mt-3 justify-content-center">
+       {isMobileOrTablet && <Container className="my-auto mt-3 justify-content-center mb-5">
         
             <Row className="my-auto text-center justify-content-center ">
             <Col xs={"auto"} className="my-auto  mb-5">

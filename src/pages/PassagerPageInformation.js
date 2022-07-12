@@ -10,12 +10,19 @@ import './PageInfo.css';
 import {Link} from  'react-router-dom';
 import { useEffect,useState } from 'react';
 import Header from './Header';
+import { useMediaQuery } from 'react-responsive';
+import Footer from './Footer';
 
 
 
 function PassagerPageInformation(props)
 {
-    console.log(props.barcodeInfo)
+    const isDesktop = useMediaQuery({
+        query: "(min-width: 1224px)"
+      });
+      const isMobileOrTablet = useMediaQuery({
+        query: "(max-width: 1224px)"
+      });
 
     const[infoPassager,setInfoPassager] = useState({passager_info:{
         numero_barcode_passager :"",
@@ -95,7 +102,7 @@ const updateAutoPassager = ()=>
     return (
         <>
             <Header />
-<Container className='justify-content-center text-center borders' style={{marginTop:20,backgroundColor:'white'}} >
+{isDesktop && <Container className='justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
 
 
     <Row className='justify-content-center pb-2 pt-2' >
@@ -159,7 +166,74 @@ const updateAutoPassager = ()=>
 
 
 </div>
-</Container>
+</Container>}
+
+{isMobileOrTablet && <Container className='my-auto justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
+
+
+    <Row className='justify-content-center pb-2 pt-2' >
+        <Col xs={6}>
+            <Link to="/form_passager_info">
+            <Image src={require('./logo_new.jpg')}  className='rounded-pill ' style={{width:300}}></Image>
+            </Link>
+       
+        </Col>
+    </Row>
+    
+<div>
+<Row className='justify-content-center '>
+        <Col xs = {12} className='text-start borders pt-2'>
+        <div>
+        <h6><u><b><i>INFORMATIONS GENERALE PASSAGER</i></b></u></h6>
+        <li><b><i>Noms Passager : </i></b><i className='couleur' ><b>{JSON.stringify(infoPassager.passager_info.passenger_and_ticket_info).trim().slice(16,50)}</b> </i></li>
+        <li><b><i>Code PNR Passager : </i></b><i className='couleur'><b>{JSON.stringify(infoPassager.passager_info.pnr_and_bagage_info).trim().slice(3,9)}</b></i></li>
+        <li><b><i>Informations sur le vol : </i></b><i className='couleur' ><b>{JSON.stringify(infoPassager.passager_info.flight_info).trim().slice(3,49)}</b></i></li>
+        <li><b><i>Informations sur l'avion : </i></b><i className='couleur' ><b>{JSON.stringify(infoPassager.passager_info.avion_info).trim().slice(3,38)}</b></i></li>
+        </div>
+        </Col>
+    </Row>
+    <Row >
+
+        <Col xs = {6} className='text-start borders pt-2'>
+        <div >
+        <h6 className='text-center'><u><b><i>INFORMATIONS STATUS LIEU DEPART </i></b></u></h6>
+        <ul>
+        <li><b><i>Type d'operation  :</i></b> <i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_checker_depart}</b></i></li>
+        <li><b><i>Passager en salle DGM :</i></b> <i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_localisation_dgm}</b></i> </li>
+        <li><b><i>Passager en salle d'attente :</i></b> <i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_localisation_salle_attente }</b></i></li>
+        <li><b><i>Passager embarqué :</i></b><i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_embarquement_avion}</b></i></li>
+        </ul>
+        </div>
+        </Col>
+        <Col xs = {6} className='text-start borders pt-2'>
+        <div >
+        <h6 className='text-center'><u><b><i>INFORMATIONS STATUS LIEU DESTINATION </i></b></u></h6>
+        <ul>
+        <li><b><i>Type d'operation :</i></b><i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_checker_arriver }</b></i></li>
+        <li><b><i>Passager debarqué : </i></b><i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_debarquement_avion}</b></i>  </li>
+        <li><b><i>Passager récuperé bagage :</i></b><i className='couleur text-success'><b>{infoPassager.passager_info.ok_passager_arriver_et_recuperer_baggage}</b></i></li>
+        </ul>
+        </div>
+        </Col>
+    </Row>
+  
+  
+    <Row className='justify-content-center pb-3 pt-3'>
+        <Col xs ={"auto"} >
+        <Link to="" style={{color:'white',textDecorationLine:'none'}}>
+        <Button variant="primary" type="submit" onClick={message} >
+        Imprimer informations
+        </Button>
+        </Link>
+
+        </Col>
+    </Row>
+  
+
+
+</div>
+</Container>}
+<Footer />
         </>
     )
 }

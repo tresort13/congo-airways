@@ -153,7 +153,7 @@ return (
 </Form>
 </Container>}
 
-{isMobileOrTablet && <Container className='mx-auto justify-content-center text-center bordure' style={{marginTop:25,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto mx-auto justify-content-center text-center bordure mb-5' style={{marginTop:50,backgroundColor:'white'}} >
    
 <Row className='justify-content-center  pt-2' >
         <Col xs={"auto"}>
