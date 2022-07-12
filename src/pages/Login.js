@@ -154,7 +154,7 @@ function Login(props)
 </Form>
 </Container> }
 
-{isMobileOrTablet && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:50,backgroundColor:'white'}} >
     
 <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={"auto"}>
