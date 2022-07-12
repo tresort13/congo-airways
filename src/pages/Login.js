@@ -141,12 +141,10 @@ function Login(props)
         connexion
         </Button>
         </Link>
-        <p className='pt-3 text-danger'><b>{message}</b></p>
         </Col>
     </Row>
-
     <Row className='justify-content-center pb-3'>
-        <Col  xs={6}>    
+        <Col  xs={"auto"}>    
         <p className='pt-3 text-danger'><b>{message}</b></p>
         </Col>
     </Row>
