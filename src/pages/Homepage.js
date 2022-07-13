@@ -65,7 +65,7 @@ function Homepage()
 
         </Row>
 
-        <Row className="text-center justify-content-center mt-3">
+        <Row className="text-center justify-content-center mt-3 mb-5">
         <Col md={4} className="my-auto text-center">
              <div className="d-grid bg-white text-center justify-content-center rounded zoom bordure" style={{width:300}}>
               <div>

@@ -209,13 +209,13 @@ function App() {
         <Route path="/form_vol_poids_info" element={username == "" ? <Navigate to ='/' /> :<FormVolPoidsInfo username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  temps = {temps}/>} >
         </Route>
 
-        <Route path="/form_date_vol_bagage" element={username == "" ? <Navigate to ='/' /> :<FormDateVolBagages username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  temps = {temps}/>} >
+        <Route path="/form_date_vol_bagage" element={username == "" ? <Navigate to ='/' /> :<FormDateVolBagages username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  setTemps = {setTemps}/>} >
         </Route>
 
-        <Route path="/form_date_vol_passager" element={username == "" ? <Navigate to ='/' /> :<FormDateVolPassager username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  temps = {temps}/>} >
+        <Route path="/form_date_vol_passager" element={username == "" ? <Navigate to ='/' /> :<FormDateVolPassager username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  setTemps = {setTemps}/>} >
         </Route>
 
-        <Route path="/form_date_vol_livraison" element={username == "" ? <Navigate to ='/' /> :<FormDateVolLivraison username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  temps = {temps}/>} >
+        <Route path="/form_date_vol_livraison" element={username == "" ? <Navigate to ='/' /> :<FormDateVolLivraison username = {username}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  setTemps = {setTemps}/>} >
         </Route>
 
         <Route path="/poids_bagage_info" element={username == "" ? <Navigate to ='/' /> :<PoidsBagageInfo username = {username} volInfo={volInfo}  setVolInfo={setVolInfo} barcodeInfo = {barcodeInfo}  />} >

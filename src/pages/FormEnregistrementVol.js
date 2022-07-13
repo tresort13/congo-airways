@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import Button from "react-bootstrap/Button";
@@ -27,10 +27,16 @@ function FormEnregistrementVol(props)
       });
       const isMobileOrTablet = useMediaQuery({
         query: "(max-width: 1224px)"
-      });    
+      });   
+      const inputRef = useRef(null) 
 
     const [message,setMessage] = useState("Veuillez enregistrer le vol d'aujourd'hui")
     const [couleur,setCouleur] = useState("text-dark")
+
+    const resetFileInput = () => {
+        // 👇️ reset input value
+        inputRef.current.value = null;
+      };
     const submitVol = (e)=>
     {
         
@@ -63,7 +69,7 @@ function FormEnregistrementVol(props)
                     setCouleur("text-danger")
                 } )
 
-                
+                resetFileInput()        
                 
     }
 
@@ -97,7 +103,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3" >
-        <Form.Select name="volDestination" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef} name="volDestination" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Destionation</option>
          <option value="KIN - GOM">KIN - GOM</option>
          <option value="KIN - LUM">KIN - LUM</option>
@@ -111,7 +117,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
-        <Form.Select name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Avion(Aircraft)</option>
          <option value="Airbus A320, 9S-ALU">Airbus A320, 9S-ALU </option>
          <option value="Boing B240, 7S-LUM">Boing B240, 7S-LUM </option>
@@ -124,7 +130,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -132,7 +138,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -170,7 +176,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" >
-        <Form.Select name="volDestination" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef} name="volDestination" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Destionation</option>
          <option value="KIN - GOM">KIN - GOM</option>
          <option value="KIN - LUM">KIN - LUM</option>
@@ -184,7 +190,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" >
-        <Form.Select name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Avion(Aircraft)</option>
          <option value="Airbus A320, 9S-ALU">Airbus A320, 9S-ALU </option>
          <option value="Boing B240, 7S-LUM">Boing B240, 7S-LUM </option>
@@ -197,7 +203,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -205,7 +211,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
