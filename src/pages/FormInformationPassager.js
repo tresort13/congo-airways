@@ -49,7 +49,7 @@ function FormInformationPassager(props)
                     console.error(error)
                 } )
 
-                setBarcode({infoBarcode:{barcodePassager:""}})
+
     }
 
     const inputChanged = (event)=>
