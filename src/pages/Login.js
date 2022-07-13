@@ -100,12 +100,8 @@ yn
 <>
  
 {isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white',width:750}} >
-<Row className='justify-content-center mb-3 pt-3' >
-        <Col xs={"auto"}>
-        <p className='text-primary'><i><b>Veuillez vous connecter</b></i></p>
-        </Col>
-    </Row>
-    
+
+    <p className='text-primary'><i>Veuillez vous connecter</i></p>
     <Row className='justify-content-center mb-5 pt-3' >
         <Col>
         <Image src={require('./logo_new.jpg')}  className='rounded-pill ' style={{width:300}}></Image>
