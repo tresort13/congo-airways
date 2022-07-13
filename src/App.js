@@ -164,10 +164,10 @@ function App() {
         <Route path="/form_enregistrement_vol" element={username == "" ? <Navigate to ='/' /> :<FormEnregistrementVol username = {username}  barcodeInfo={barcodeInfo}/>} >
         </Route>
 
-        <Route path="/form_vol_bagage_info" element={username == "" ? <Navigate to ='/' /> :<FormVolBagagesInfo username = {username}  setVolInfo={setVolInfo}/>} >
+        <Route path="/form_vol_bagage_info" element={username == "" ? <Navigate to ='/' /> :<FormVolBagagesInfo username = {username}  setVolInfo={setVolInfo} temps={temps}/>} >
         </Route>
 
-        <Route path="/form_vol_passager_info" element={username == "" ? <Navigate to ='/' /> :<FormVolPassagersInfo username = {username}  setVolInfo={setVolInfo}/>} >
+        <Route path="/form_vol_passager_info" element={username == "" ? <Navigate to ='/' /> :<FormVolPassagersInfo username = {username}  setVolInfo={setVolInfo} temps={temps}/>} >
         </Route>
 
         <Route path="/vol_bagage_page_info" element={username == "" ? <Navigate to ='/' /> :<VolBagagePageInfo username = {username}  volInfo = {volInfo} />} >
@@ -185,7 +185,7 @@ function App() {
         <Route path="/menu_livraison" element={username == "" ? <Navigate to ='/' /> :<MenuGestionLivraison username = {username}   />} >
         </Route>
 
-        <Route path="/form_vol_select_non_livre" element={username == "" ? <Navigate to ='/' /> :<FormVolSelectNonLivre username = {username}  setVolInfo={setVolInfo} />} >
+        <Route path="/form_vol_select_non_livre" element={username == "" ? <Navigate to ='/' /> :<FormVolSelectNonLivre username = {username}  setVolInfo={setVolInfo} temps={temps} />} >
         </Route>
 
         <Route path="/vol_bagage_non_livre_info" element={username == "" ? <Navigate to ='/' /> :<BagagesNonLivresInfo username = {username}  volInfo = {volInfo} />} >
