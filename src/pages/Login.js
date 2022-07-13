@@ -99,7 +99,7 @@ yn
 
 <>
  
-{isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white',width:750}} >
+{isDesktop && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
 
 
     <Row className='justify-content-center mb-5 pt-3' >
@@ -112,7 +112,7 @@ yn
     <Row className='justify-content-center'>
         <Col xs={6} >
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="username"  name="username"
+        <Form.Control type="email" placeholder="nom d'utilisateur"  name="username"
         value ={state.credentials.username} onChange={inputChanged}/>
         
          </Form.Group>
@@ -122,7 +122,7 @@ yn
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-         <Form.Control type="password" placeholder="Password" name="password"
+         <Form.Control type="password" placeholder="mot de passe" name="password"
          value ={state.credentials.password} onChange={inputChanged} />
 
          </Form.Group>
@@ -164,7 +164,7 @@ yn
     <Row className='justify-content-center'>
         <Col xs={"auto"} >
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Control type="email" placeholder="username"  name="username"
+        <Form.Control type="email" placeholder="nom d'utilisateur"  name="username"
         value ={state.credentials.username} onChange={inputChanged}/>
         
          </Form.Group>
@@ -174,7 +174,7 @@ yn
     <Row className='justify-content-center'>
         <Col xs={"auto"}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-         <Form.Control type="password" placeholder="Password" name="password"
+         <Form.Control type="password" placeholder="mot de passe" name="password"
          value ={state.credentials.password} onChange={inputChanged} />
 
          </Form.Group>
