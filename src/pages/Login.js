@@ -113,7 +113,7 @@ yn
         <Col xs={6} >
         <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" placeholder="nom d'utilisateur"  name="username"
-        value ={state.credentials.username} onChange={inputChanged}/>
+        value ={state.credentials.username} onChange={inputChanged} autoFocus/>
         
          </Form.Group>
         </Col>
@@ -165,7 +165,7 @@ yn
         <Col xs={"auto"} >
         <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="email" placeholder="nom d'utilisateur"  name="username"
-        value ={state.credentials.username} onChange={inputChanged}/>
+        value ={state.credentials.username} onChange={inputChanged} autoFocus/>
         
          </Form.Group>
         </Col>
