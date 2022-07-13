@@ -63,7 +63,7 @@ function FormEnregistrementBagages(props)
               .catch( (error) =>
                 {
                     console.error(error)
-                    setMessage("veuillez re-essayer l'enregistrement en suivant la procécedure!!")
+                    setMessage("echec enregistrement!!")
                     setCouleur("text-danger")
                 } )
        

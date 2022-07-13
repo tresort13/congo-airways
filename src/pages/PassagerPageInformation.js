@@ -166,6 +166,12 @@ const updateAutoPassager = ()=>
 
 
 </div>
+
+<Row className="mt-5">
+          <Col md={12}>
+            <p></p>
+          </Col>
+        </Row>
 </Container>}
 
 {isMobileOrTablet && <Container className='my-auto justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
