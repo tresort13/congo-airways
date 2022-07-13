@@ -75,7 +75,7 @@ function Header(props)
         <Nav.Link href="/menu_gestion_vols"><Button style={{width:300,height:50}} className='btn-lg rounded-pill zoom btn-primary'><i>Gestion vols</i></Button></Nav.Link>
         <Nav.Link href="/menu_livraison"><Button style={{width:300,height:50}} className='btn-lg rounded-pill zoom btn-primary'><i>Gestion Livraison</i></Button></Nav.Link>
         <Nav.Link href="/menu_audit"><Button style={{width:300,height:50}} className='btn-lg rounded-pill zoom btn-primary'><i>Audit</i></Button></Nav.Link>
-        <Nav.Link href="/menu_utilisateurs"><Button style={{width:300,height:50}} className='btn-lg rounded-pill zoom btn-primary'><i>Gestion d'utilisateur</i></Button></Nav.Link>
+        <Nav.Link href="/menu_users"><Button style={{width:300,height:50}} className='btn-lg rounded-pill zoom btn-primary'><i>Gestion d'utilisateur</i></Button></Nav.Link>
           
                   
                 </Nav>
