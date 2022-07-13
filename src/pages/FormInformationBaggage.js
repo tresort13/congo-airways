@@ -30,25 +30,7 @@ function FormInformationBaggage(props)
       });
     const submitBarcode = ()=>
     {
-        props.setBarcodeInfo(barcode.infoBarcode.barcodeBagage)
-        
-        fetch('https://congoairwaysapi.herokuapp.com/api/bagageInformation/', {
-                method: 'PUT',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(barcode.infoBarcode)
-              })
-              .then( res => res.json())
-              .then(
-                res => {   
-                    console.log(res) 
-                    props.setBarcodeInfo(barcode.infoBarcode.barcodeBagage)        
-                }
-              )
-              .catch( (error) =>
-                {
-                    console.error(error)
-                } )
-
+        props.setBarcodeInfo(barcode.infoBarcode.barcodeBagage)   
                 
     }
 

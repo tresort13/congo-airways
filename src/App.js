@@ -149,13 +149,13 @@ function App() {
         <Route path="/form_passager_info" element={username == "" ? <Navigate to ='/' /> :<FormInformationPassager username = {username} setBarcodeInfo={setBarcodeInfo}/>} >
         </Route>
 
-        <Route path="/form_enregistrement_bagage" element={username == "" ? <Navigate to ='/' /> :<FormEnregistrementBagages username = {username} volInfo = {volInfo}/>} >
+        <Route path="/form_enregistrement_bagage" element={username == "" ? <Navigate to ='/' /> :<FormEnregistrementBagages username = {username} volInfo = {volInfo} setBarcodeInfo={setBarcodeInfo}/>} >
         </Route>
 
-        <Route path="/form_enregistrement_passager" element={username == "" ? <Navigate to ='/' /> :<FormEnregistrementPassagers username = {username} volInfo = {volInfo}/>} >
+        <Route path="/form_enregistrement_passager" element={username == "" ? <Navigate to ='/' /> :<FormEnregistrementPassagers username = {username} volInfo = {volInfo} setBarcodeInfo={setBarcodeInfo}/>} >
         </Route>
 
-        <Route path="/bagage_page_info" element={username == "" ? <Navigate to ='/' /> :<BagagePageInformation username = {username}  barcodeInfo={barcodeInfo}/>} >
+        <Route path="/bagage_page_info" element={username == "" ? <Navigate to ='/' /> :<BagagePageInformation username = {username}  barcodeInfo={barcodeInfo} />} >
         </Route>
 
         <Route path="/passager_page_info" element={username == "" ? <Navigate to ='/' /> :<PassagerPageInformation username = {username}  barcodeInfo={barcodeInfo}/>} >
