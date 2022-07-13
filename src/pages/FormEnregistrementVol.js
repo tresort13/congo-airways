@@ -29,6 +29,9 @@ function FormEnregistrementVol(props)
         query: "(max-width: 1224px)"
       });   
       const inputRef = useRef(null) 
+      const inputRef2 = useRef(null)
+      const inputRef3 = useRef(null)
+      const inputRef4 = useRef(null)
 
     const [message,setMessage] = useState("Veuillez enregistrer le vol d'aujourd'hui")
     const [couleur,setCouleur] = useState("text-dark")
@@ -36,6 +39,10 @@ function FormEnregistrementVol(props)
     const resetFileInput = () => {
         // 👇️ reset input value
         inputRef.current.value = null;
+        inputRef2.current.value = null;
+        inputRef3.current.value = null;
+        inputRef4.current.value = null;
+    
       };
     const submitVol = (e)=>
     {
@@ -117,7 +124,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
-        <Form.Select ref={inputRef} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef2} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Avion(Aircraft)</option>
          <option value="Airbus A320, 9S-ALU">Airbus A320, 9S-ALU </option>
          <option value="Boing B240, 7S-LUM">Boing B240, 7S-LUM </option>
@@ -130,7 +137,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control ref={inputRef} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef3} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -138,7 +145,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control ref={inputRef} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef4} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -190,7 +197,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" >
-        <Form.Select ref={inputRef} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
+        <Form.Select ref={inputRef2} name="volTypeAvion" aria-label="Default select example" onChange={e=>inputChanged(e)}>
          <option>Selectionnez Avion(Aircraft)</option>
          <option value="Airbus A320, 9S-ALU">Airbus A320, 9S-ALU </option>
          <option value="Boing B240, 7S-LUM">Boing B240, 7S-LUM </option>
@@ -203,7 +210,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control ref={inputRef} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef3} name="dateType"  type="date" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>
@@ -211,7 +218,7 @@ return (
     <Row className='justify-content-center'>
         <Col xs={6}>
         <Form.Group className="mb-3" controlId="formBasicText" >
-        <Form.Control ref={inputRef} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
+        <Form.Control ref={inputRef4} name="volTime"  type="time" onChange={e=>inputChanged(e)}  />
          </Form.Group>
         </Col>
     </Row>

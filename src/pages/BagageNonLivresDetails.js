@@ -197,8 +197,13 @@ const updateAutoBagage = ()=>
     </Row>
 </Form>
 
-
 </div>
+
+<Row className="mt-5">
+          <Col md={12}>
+            <p></p>
+          </Col>
+</Row>
 </Container>}
 
 <Footer />
