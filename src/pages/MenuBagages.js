@@ -25,6 +25,7 @@ function MenuBagages(props)
     return (
 <>
 <Header username={props.username} />
+<div>
 {isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:30,backgroundColor:'white',width:750}} >
     <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={6}>
@@ -126,7 +127,12 @@ function MenuBagages(props)
     </Row>
 
 </Container>}
-
+<Row className="mt-5">
+          <Col md={12}>
+            <p></p>
+          </Col>
+        </Row>
+</div>
 
 <Footer />
 </>

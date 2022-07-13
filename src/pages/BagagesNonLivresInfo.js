@@ -92,6 +92,7 @@ const updateAutoBagage = ()=>
     return (
         <>
         <Header username={props.username}/>
+        <div>
 {isDesktop && <Container className='justify-content-center text-center borders' style={{marginTop:20,backgroundColor:'white'}} >
 
 
@@ -163,11 +164,7 @@ const updateAutoBagage = ()=>
 
 </div>
 
-<Row className="mt-5">
-          <Col md={12}>
-            <p></p>
-          </Col>
-        </Row>
+
 </Container>}
 
 {isMobileOrTablet && <Container className='justify-content-center text-center borders mb-5' style={{marginTop:20,backgroundColor:'white'}} >
@@ -243,12 +240,14 @@ const updateAutoBagage = ()=>
 
 </div>
 
+
+</Container>}
 <Row className="mt-5">
           <Col md={12}>
             <p></p>
           </Col>
         </Row>
-</Container>}
+</div>
 <Footer />
     </>
     )

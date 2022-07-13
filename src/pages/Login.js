@@ -39,7 +39,7 @@ function Login(props)
       /*const isMobile = useMediaQuery({
         query: "(max-width: 786px)"
       });
-
+yn
       const isRetina = useMediaQuery({
         query: "(min-resolution: 2dppx)"
       });*/
@@ -99,7 +99,7 @@ function Login(props)
 
 <>
  
-{isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white'}} >
+{isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:110,backgroundColor:'white',width:750}} >
 <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={"auto"}>
         <p className='text-primary'><i><b>Veuillez vous connecter</b></i></p>
