@@ -9,7 +9,8 @@ import Image from 'react-bootstrap/Image';
 import  './Login.css';
 import {Link,useNavigate} from  'react-router-dom';
 import { useMediaQuery } from 'react-responsive'
-
+import HeaderLogin from './HeaderLogin';
+import Footer from './Footer';
 
 
 
@@ -98,8 +99,8 @@ yn
     return (
 
 <>
- 
-{isDesktop && <Container className='my-center justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
+ <HeaderLogin />
+{isDesktop && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
 
 
     <Row className='justify-content-center mb-5 pt-3' >
@@ -204,7 +205,7 @@ yn
 </Container> }
 
 
-
+<Footer />
 </>
 )
 }
