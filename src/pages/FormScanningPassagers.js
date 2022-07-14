@@ -30,6 +30,7 @@ function FormScanningPassagers(props)
       });
 
     const [message,setMessage] = useState("veuillez scanner le barcode du passager ")
+    const [couleur,setCouleur] = useState("text-dark")
     const submitBarcode = (e)=>
     {
         
@@ -81,7 +82,7 @@ function FormScanningPassagers(props)
 {isDesktop && <Container className='justify-content-center text-center bordure' style={{marginTop:50,backgroundColor:'white',width:750}} >
 <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={6}>
-        <p><i>{message}</i></p>
+        <p className={couleur}><i>{message}</i></p>
         </Col>
     </Row>
 
