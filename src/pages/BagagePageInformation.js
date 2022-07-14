@@ -143,6 +143,7 @@ const updateAutoBagage = ()=>
         <li><b><i>Code PNR Passager : </i></b><i className='couleur'><b>{JSON.stringify(infoBagage.bagage_info.pnr_and_bagage_info).trim().slice(3,9)}</b></i></li>
         <li><b><i>Informations sur le vol : </i></b><i className='couleur' ><b>{JSON.stringify(infoBagage.bagage_info.flight_info).trim().slice(3,49)}</b></i></li>
         <li><b><i>Informations sur l'avion : </i></b><i className='couleur' ><b>{JSON.stringify(infoBagage.bagage_info.avion_info).trim().slice(3,38)}</b></i></li>
+        <li><i>Téléphone : </i></li>
         </div>
         </Col>
     </Row>
@@ -233,6 +234,7 @@ const updateAutoBagage = ()=>
         <li><b><i>Code PNR Passager : </i></b><i className='couleur'><b>{JSON.stringify(infoBagage.bagage_info.pnr_and_bagage_info).trim().slice(3,9)}</b></i></li>
         <li><b><i>Informations sur le vol : </i></b><i className='couleur' ><b>{JSON.stringify(infoBagage.bagage_info.flight_info).trim().slice(3,49)}</b></i></li>
         <li><b><i>Informations sur l'avion : </i></b><i className='couleur' ><b>{JSON.stringify(infoBagage.bagage_info.avion_info).trim().slice(3,38)}</b></i></li>
+        <li><i>Téléphone : </i></li>
         </div>
         </Col>
 </Row>
