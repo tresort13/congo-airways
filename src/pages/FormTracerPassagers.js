@@ -95,20 +95,28 @@ return (
         </Col>
     </Row>
   
-    <Row className='justify-content-center'>
+    {operation =="Depart" ? <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name="position" aria-label="Default select example" onChange={e=>setPosition(e.target.value)}>
          <option>Selectionnez votre position</option>
-         <option value="ok_passager_localisation_dgm">Salle DGM </option>
-         <option value="ok_passager_localisation_salle_attente">Salle d'attente</option>
-         <option value="ok_passager_embarquement_avion">embarquer</option>
-         <option value="ok_passager_debarquement_avion">debarquer</option>
-         <option value="ok_passager_arriver_et_recuperer_baggage">Bagage livré </option>
+         <option value="ok_passager_localisation_dgm">passager en Salle DGM </option>
+         <option value="ok_passager_localisation_salle_attente">passager en salle d'attente</option>
+         <option value="ok_passager_embarquement_avion">passager embarquement</option>
          </Form.Select>
          </Form.Group>
         </Col>
-    </Row>
+    </Row> :  <Row className='justify-content-center'>
+    <Col xs ={6}>
+    <Form.Group className="mb-3" >
+    <Form.Select name="position" aria-label="Default select example" onChange={e=>setPosition(e.target.value)}>
+     <option>Selectionnez votre position</option>
+     <option value="ok_passager_debarquement_avion">passager debarquement</option>
+     <option value="ok_passager_arriver_et_recuperer_baggage">passager a récuperé son bagage</option>
+     </Form.Select>
+     </Form.Group>
+    </Col>
+    </Row>}
   
     <Row className='justify-content-center'>
         <Col xs ={6}>
@@ -165,20 +173,28 @@ return (
         </Col>
     </Row>
   
-    <Row className='justify-content-center'>
-        <Col xs={"auto"}>
+    {operation =="Depart" ? <Row className='justify-content-center'>
+        <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name="position" aria-label="Default select example" onChange={e=>setPosition(e.target.value)}>
          <option>Selectionnez votre position</option>
-         <option value="ok_passager_localisation_dgm">Salle DGM </option>
-         <option value="ok_passager_localisation_salle_attente">Salle d'attente</option>
-         <option value="ok_passager_embarquement_avion">embarquer</option>
-         <option value="ok_passager_debarquement_avion">debarquer</option>
-         <option value="ok_passager_arriver_et_recuperer_baggage">Bagage livré </option>
+         <option value="ok_passager_localisation_dgm">passager en Salle DGM </option>
+         <option value="ok_passager_localisation_salle_attente">passager en salle d'attente</option>
+         <option value="ok_passager_embarquement_avion">passager embarquement</option>
          </Form.Select>
          </Form.Group>
         </Col>
-    </Row>
+    </Row> :  <Row className='justify-content-center'>
+    <Col xs ={6}>
+    <Form.Group className="mb-3" >
+    <Form.Select name="position" aria-label="Default select example" onChange={e=>setPosition(e.target.value)}>
+     <option>Selectionnez votre position</option>
+     <option value="ok_passager_debarquement_avion">passager debarquement</option>
+     <option value="ok_passager_arriver_et_recuperer_baggage">passager a récuperé son bagage</option>
+     </Form.Select>
+     </Form.Group>
+    </Col>
+    </Row>}
   
     <Row className='justify-content-center'>
         <Col xs={"auto"}>

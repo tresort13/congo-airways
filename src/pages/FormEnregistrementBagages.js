@@ -37,7 +37,7 @@ function FormEnregistrementBagages(props)
     const submitBarcode = (e)=>
     {
     
-
+        e.preventDefault()
 
         fetch('https://congoairwaysapi.herokuapp.com/api/bagageInformation/', {
                 method: 'POST',
@@ -107,7 +107,7 @@ function FormEnregistrementBagages(props)
     <Row className='justify-content-center'>
         <Col xs = {6}>
         <Form.Group className="mb-3 " controlId="formBasicText" >
-        <Form.Control name="barcodeBagage" value={barcode.infoBarcode.barcodeBagage} onChange={e=>inputChanged(e)} type="text" placeholder="Veuillez entrer le barcode du baggage" autoFocus required/>
+        <Form.Control name="barcodeBagage" value={barcode.infoBarcode.barcodeBagage} onChange={e=>inputChanged(e)} type="text" placeholder="Veuillez entrer le barcode du baggage" autoFocus/>
          </Form.Group>
         </Col>
     </Row>

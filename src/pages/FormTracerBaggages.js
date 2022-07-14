@@ -103,7 +103,7 @@ return (
         </Col>
     </Row>
   
-    <Row className='justify-content-center'>
+    {operation == "Depart" ? <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
@@ -115,16 +115,26 @@ return (
          <option value="ok_bagage_emplacement_south_C">South C</option>
          <option value="ok_bagage_embarquement_depart">embarquement</option>
          <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
-         <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
-         <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
-         <option value="ok_bagage_livrer">livrer bagage</option>
-         <option value="ok_bagage_stocke_depart">stockage (lieu de depart)</option>
-         <option value="ok_bagage_stocke_arrivee">stockage (lieu d'arriver)</option>
+         <option value="ok_bagage_stocke_depart">stocker bagage</option>
          
          </Form.Select>
          </Form.Group>
         </Col>
-    </Row>
+    </Row> : <Row className='justify-content-center'>
+    <Col xs ={6}>
+        <Form.Group className="mb-3" >
+        <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
+         <option>Selectionnez votre position</option>
+         <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
+         <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
+         <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
+         <option value="ok_bagage_livrer">livrer bagage</option>
+         <option value="ok_bagage_stocke_arrivee">stocker bagage</option>
+         
+         </Form.Select>
+         </Form.Group>
+        </Col>
+        </Row>}
 
     <Row className='justify-content-center'>
         <Col xs ={6}>
@@ -183,8 +193,8 @@ return (
         </Col>
     </Row>
   
-    <Row className='justify-content-center'>
-        <Col xs={"auto"}>
+    {operation == "Depart" ? <Row className='justify-content-center'>
+        <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
          <option>Selectionnez votre position</option>
@@ -195,13 +205,27 @@ return (
          <option value="ok_bagage_emplacement_south_C">South C</option>
          <option value="ok_bagage_embarquement_depart">embarquement</option>
          <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
-         <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
-         <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
-         <option value="ok_bagage_livrer">livrer bagage</option>
+         <option value="ok_bagage_stocke_depart">stocker bagage</option>
+         
          </Form.Select>
          </Form.Group>
         </Col>
-    </Row>
+    </Row> : <Row className='justify-content-center'>
+    <Col xs ={6}>
+        <Form.Group className="mb-3" >
+        <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
+         <option>Selectionnez votre position</option>
+         <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
+         <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
+         <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
+         <option value="ok_bagage_livrer">livrer bagage</option>
+         <option value="ok_bagage_stocke_arrivee">stocker bagage</option>
+         
+         </Form.Select>
+         </Form.Group>
+        </Col>
+        </Row>}
+
 
     <Row className='justify-content-center'>
         <Col xs={"auto"}>
