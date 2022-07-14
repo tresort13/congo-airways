@@ -125,7 +125,6 @@ return (
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
          <option>Selectionnez votre position</option>
-         <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
          <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
          <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
          <option value="ok_bagage_livrer">livrer bagage</option>
@@ -215,7 +214,6 @@ return (
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
          <option>Selectionnez votre position</option>
-         <option value="ok_bagage_debarquement_depart">debarquement (depart)</option>
          <option value="ok_bagage_debarquement_arrivee">debarquement (arrivée)</option>
          <option value="ok_bagage_en_tapis_livraison">tapis livraison</option>
          <option value="ok_bagage_livrer">livrer bagage</option>
