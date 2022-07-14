@@ -65,7 +65,8 @@ function FormScanningBaggages(props)
               .catch( (error) =>
                 {
                     
-                    setMessage("c'est barcode n'est pas enregistré veuillez l'enregistré dans l'option *enregistrer barcode bagage*")
+                    setMessage("echec operation")
+                    setCouleur("text-danger")
                 } )
 
                 console.log(barcode.infoBarcode.operation +" "+barcode.infoBarcode.position)

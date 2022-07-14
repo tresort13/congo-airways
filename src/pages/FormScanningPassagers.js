@@ -43,17 +43,25 @@ function FormScanningPassagers(props)
               .then( res => res.json())
               .then(
                 res => {   
-                    setMessage(res)          
+                    if(res =="ok")
+                {
+                    
+                    setMessage("le barcode" +barcode.infoBarcode.barcodePassager+" est scanné avec succès !!!")
+                    setCouleur("text-success")
+                } 
+                else{
+                    setMessage("echec operation")
+                    setCouleur("text-danger")
+                }
+       
                 }
               )
               .catch( (error) =>
                 {
-                    setMessage("c'est barcode n'est pas enregistré veuillez l'enregistré dans l'option *enregistrer barcode passager*")  
+                    
+                    setMessage("echec operation")
+                    setCouleur("text-danger")
                 } )
-
-                console.log(barcode.infoBarcode.operation +" "+barcode.infoBarcode.position)
-
-                setBarcode({infoBarcode:{barcodePassager:""}})
     }
 
     const inputChanged = (event)=>
