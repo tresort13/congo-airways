@@ -77,7 +77,7 @@ function HeaderLogin(props)
         </Col>
         <Col xs={"auto"} className=" mx-auto my-auto text-end ">
          <div>
-           <pre className="text-dark display-6 text-end" style={{fontSize: 20}}><span ><i><b>Bienvenu(e)</b></i> </span><span className="separateur text-primary"></span><a href="" style={{textDecoration:"none"}}><span className="text-danger"><i onClick={logout}> Logout </i> </span></a></pre>
+           <pre className="text-dark display-6 text-center" style={{fontSize: 20}}><span ><i><b>Bienvenu(e)</b></i></span></pre>
            <i><pre className="text-dark display-6 timing text-end" style={{fontSize: 15}}>{theTime}</pre></i>
         </div>  
         </Col>

@@ -100,7 +100,7 @@ yn
 
 <>
  <HeaderLogin />
-{isDesktop && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
+{isDesktop && <Container className='my-center justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
 
 
     <Row className='justify-content-center mb-5 pt-3' >
