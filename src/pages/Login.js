@@ -100,7 +100,7 @@ yn
 
 <>
  <HeaderLogin />
-{isDesktop && <Container className=' justify-content-center text-center bordure' style={{marginTop:70,backgroundColor:'white',width:750}} >
+{isDesktop && <Container className=' justify-content-center text-center bordure' style={{marginTop:100,backgroundColor:'white',width:750}} >
 
 
     <Row className='justify-content-center mb-5 pt-3' >
@@ -151,7 +151,7 @@ yn
 </Form>
 </Container> }
 
-{isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure' style={{marginTop:50,backgroundColor:'white'}} >
+{isMobileOrTablet && <Container className='mt-3 justify-content-center text-center bordure' style={{marginTop:50,backgroundColor:'white'}} >
     
 
 
