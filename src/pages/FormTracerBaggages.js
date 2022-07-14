@@ -103,7 +103,7 @@ return (
         </Col>
     </Row>
   
-    {operation == "Depart" ? <Row className='justify-content-center'>
+    {operation == "ok_bagage_checker_depart" ? <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
@@ -193,7 +193,7 @@ return (
         </Col>
     </Row>
   
-    {operation == "Depart" ? <Row className='justify-content-center'>
+    {operation == "ok_bagage_checker_depart" ? <Row className='justify-content-center'>
         <Col xs ={6}>
         <Form.Group className="mb-3" >
         <Form.Select name='position' value={position} aria-label="Default select example" onChange={e=>setPosition(e.target.value)} required>
