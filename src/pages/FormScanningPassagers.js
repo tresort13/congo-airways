@@ -125,7 +125,7 @@ function FormScanningPassagers(props)
 {isMobileOrTablet && <Container className='my-auto justify-content-center text-center bordure mb-5' style={{marginTop:50,backgroundColor:'white'}} >
 <Row className='justify-content-center mb-3 pt-3' >
         <Col xs={"auto"}>
-        <p><i>{message}</i></p>
+        <p className={couleur}><i>{message}</i></p>
         </Col>
     </Row>
 

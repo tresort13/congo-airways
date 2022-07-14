@@ -88,6 +88,7 @@ const updateAutoPassager = ()=>
                 {
                     console.error(error)
                     console.log(props.barcodeInfo)
+                    
                 } )
 
 }

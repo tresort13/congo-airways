@@ -103,7 +103,7 @@ const updateAutoBagage = ()=>
               .catch( (error) =>
                 {
                     console.error(error)
-                    console.log(props.barcodeInfo)
+                    
                 } )
 
 }
