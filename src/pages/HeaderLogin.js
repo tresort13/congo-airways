@@ -57,7 +57,7 @@ function HeaderLogin(props)
         </Col>
         <Col xs={4} className="my-auto mx-auto text-end ">
          <div>
-           <pre className="text-dark display-6" style={{fontSize: 20}}><Image className="navbar-brand rounded-circle" src={require('./avatar_new.jpg')} type="button" alt="profil" style={{width:40}} ></Image><span ><i>Bienvenu(e) </i> </span><span className="separateur text-primary"></span></pre>
+           <pre className="text-dark display-6 text-center" style={{fontSize: 20}}><Image className="navbar-brand rounded-circle" src={require('./avatar_new.jpg')} type="button" alt="profil" style={{width:40}} ></Image><span ><i>Bienvenu(e)</i> </span></pre>
            <i><pre className="text-dark display-6 timing text-center" style={{fontSize: 15}}>{theTime}</pre></i>
         </div>  
         </Col>
