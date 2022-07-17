@@ -19,7 +19,7 @@ function Homepage()
       });
     return (
     <>
-       {isDesktop && <Container className="mt-3 mb-5">
+       {isDesktop && <Container className="mt-5 mb-5">
         <Row className="text-center justify-content-center">
             <Col md={4} className="my-auto text-center">
              <div className="d-grid bg-white text-center justify-content-center rounded zoom bordure" style={{width:300}}>
