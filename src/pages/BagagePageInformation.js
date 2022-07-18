@@ -94,7 +94,7 @@ const updateAutoBagage = ()=>
                 headers: {'Content-Type': 'application/json'},
                 //body: JSON.stringify(props.barcodeInfo)
               })
-              .then( res => res.json())
+              //.then( res => res.json())
               .then(
                 res => {   
                     bagageData(res)         
